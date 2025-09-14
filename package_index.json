@@ -16,8 +16,8 @@
           "category": "Contributed",
           "url": "https://github.com/kliskatek/arduino-renesas-uno/releases/download/1.5.1/kliskatek_renesas_uno_1.5.1.zip",
           "archiveFileName": "kliskatek_renesas_uno_1.5.1.zip",
-          "checksum": "SHA-256:5375F961B19A7FEB1EE37CCAACED0BA146BEBEEDA6A027DE345019AA80C3D1D5",
-          "size": "9109556",
+          "checksum": "SHA-256:4178617317D40A4FBB15B7ADADEB514D27D55A4DD2499D7FD2D8200C4D6264E0",
+          "size": "9127348",
           "boards": [
             {
               "name": "Nexus Display CAN"
