@@ -1,0 +1,50 @@
+ndcan.name=Nexus Display CAN
+ndcan.build.core=arduino
+ndcan.build.crossprefix=arm-none-eabi-
+ndcan.build.compiler_path={runtime.tools.arm-none-eabi-gcc-7-2017q4.path}/bin/
+
+ndcan.build.variant=NDCAN
+ndcan.build.mcu=cortex-m4
+ndcan.build.architecture=cortex-m4
+ndcan.build.fpu=-mfpu=fpv4-sp-d16
+ndcan.build.float-abi=-mfloat-abi=hard
+
+ndcan.build.board=NDCAN
+ndcan.build.defines=-DF_CPU=48000000 -DARDUINO_UNOR4_MINIMA
+ndcan.vid.0=0x2341
+ndcan.pid.0=0x0069
+ndcan.vid.1=0x2341
+ndcan.pid.1=0x0369
+ndcan.upload_port.0.vid=0x2341
+ndcan.upload_port.0.pid=0x0069
+ndcan.upload_port.1.vid=0x2341
+ndcan.upload_port.1.pid=0x0369
+
+ndcan.compiler.fsp.defines={build.variant.path}/defines.txt
+ndcan.compiler.fsp.ldflags={build.variant.path}/ldflags.txt
+ndcan.compiler.fsp.cflags=-mthumb "@{compiler.fsp.defines}"
+ndcan.compiler.fsp.cxxflags=-mthumb "@{compiler.fsp.defines}"
+ndcan.compiler.tinyusb.cflags=-DCFG_TUSB_MCU=OPT_MCU_RAXXX
+ndcan.compiler.tinyusb.cxxflags=-DCFG_TUSB_MCU=OPT_MCU_RAXXX
+ndcan.compiler.fsp.includes={build.variant.path}/includes.txt
+ndcan.compiler.fsp.extra_ldflags=--specs=nano.specs -lstdc++ -lsupc++ -lm -lc -lgcc -lnosys
+ndcan.compiler.fsp="{build.variant.path}/libs/libfsp.a"
+
+ndcan.upload.tool=dfu-util
+ndcan.upload.tool.default=dfu-util
+ndcan.upload.protocol=
+ndcan.upload.transport=
+ndcan.upload.vid=0x2341
+ndcan.upload.pid=0x0369
+ndcan.upload.address=0x00010000
+ndcan.upload.interface=0
+ndcan.upload.use_1200bps_touch=false
+ndcan.upload.wait_for_upload_port=false
+ndcan.upload.native_usb=true
+ndcan.upload.maximum_size=262144
+ndcan.upload.maximum_data_size=32768
+
+ndcan.debug.server.openocd.scripts.0=interface/{programmer.protocol}.cfg
+ndcan.debug.server.openocd.scripts.1={programmer.transport_script}
+ndcan.debug.server.openocd.scripts.2={runtime.platform.path}/debugger/R7FA4M1AB.cfg
+ndcan.debug.svd_file={runtime.platform.path}/svd/R7FA4M1AB.svd

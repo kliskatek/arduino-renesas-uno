@@ -1,0 +1,58 @@
+{
+  "packages": [
+    {
+      "name": "kliskatek",
+      "maintainer": "Ibon Zalbide",
+      "websiteURL": "https://www.kliskatek.com/",
+      "email": "ibon.zalbide@kliskatek.com",
+      "help": {
+        "online": "https://www.kliskatek.com"
+      },
+      "platforms": [
+        {
+          "name": "Kliskatek UNO R4 Boards",
+          "architecture": "renesas_uno",
+          "version": "1.5.1",
+          "category": "Contributed",
+          "url": "http://downloads.arduino.cc/cores/staging/ArduinoCore-renesas_uno-1.5.1.tar.bz2",
+          "archiveFileName": "ArduinoCore-renesas_uno-1.5.1.tar.bz2",
+          "checksum": "SHA-256:d44e309268d29ab317c180295883ad3557fd8854927b030b6daa2992173d8be1",
+          "size": "14162959",
+          "boards": [
+            {
+              "name": "Nexus Display CAN"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "arm-none-eabi-gcc",
+              "version": "7-2017q4"
+            },
+            {
+              "packager": "arduino",
+              "name": "bossac",
+              "version": "1.9.1-arduino5"
+            },
+            {
+              "packager": "arduino",
+              "name": "dfu-util",
+              "version": "0.11.0-arduino5"
+            },
+            {
+              "packager": "arduino",
+              "name": "openocd",
+              "version": "0.11.0-arduino2"
+            }
+          ],
+          "discoveryDependencies": [
+            {
+              "packager": "builtin",
+              "name": "dfu-discovery"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
