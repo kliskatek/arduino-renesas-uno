@@ -14,10 +14,10 @@
           "architecture": "renesas_uno",
           "version": "1.5.1",
           "category": "Contributed",
-          "url": "http://downloads.arduino.cc/cores/staging/ArduinoCore-renesas_uno-1.5.1.tar.bz2",
-          "archiveFileName": "ArduinoCore-renesas_uno-1.5.1.tar.bz2",
-          "checksum": "SHA-256:d44e309268d29ab317c180295883ad3557fd8854927b030b6daa2992173d8be1",
-          "size": "14162959",
+          "url": "https://github.com/kliskatek/arduino-renesas-uno/releases/download/1.5.1/kliskatek_renesas_uno_1.5.1.zip",
+          "archiveFileName": "kliskatek_renesas_uno_1.5.1.zip",
+          "checksum": "SHA-256:5375F961B19A7FEB1EE37CCAACED0BA146BEBEEDA6A027DE345019AA80C3D1D5",
+          "size": "9109556",
           "boards": [
             {
               "name": "Nexus Display CAN"
