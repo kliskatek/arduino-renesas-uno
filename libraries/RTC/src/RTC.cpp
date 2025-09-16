@@ -443,7 +443,7 @@ rtc_instance_ctrl_t rtc_ctrl = {
 };
 
 #ifndef RTC_CLOCK_SOURCE
-#define RTC_CLOCK_SOURCE RTC_CLOCK_SOURCE_LOCO
+#define RTC_CLOCK_SOURCE RTC_CLOCK_SOURCE_SUBCLK
 #endif
 
 const rtc_error_adjustment_cfg_t rtc_err_cfg = {

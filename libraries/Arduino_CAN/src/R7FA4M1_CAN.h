@@ -17,7 +17,7 @@
 
 #include <Arduino.h>
 
-#if defined(ARDUINO_MINIMA) || defined(ARDUINO_UNOWIFIR4) || defined(ARDUINO_NANO_R4)
+#if defined(ARDUINO_MINIMA) || defined(ARDUINO_UNOWIFIR4) || defined(ARDUINO_NANO_R4) || defined(NDCAN)
 
 #include "api/HardwareCAN.h"
 

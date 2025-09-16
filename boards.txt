@@ -10,7 +10,7 @@ ndcan.build.fpu=-mfpu=fpv4-sp-d16
 ndcan.build.float-abi=-mfloat-abi=hard
 
 ndcan.build.board=NDCAN
-ndcan.build.defines=-DF_CPU=48000000 -DARDUINO_UNOR4_MINIMA
+ndcan.build.defines=-DF_CPU=48000000 -DNDCAN
 ndcan.vid.0=0x2341
 ndcan.pid.0=0x0069
 ndcan.vid.1=0x2341
